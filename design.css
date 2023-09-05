@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    list-style: none;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.6 ease;
+    z-index: 2;
+}
+.navbar ul li a:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    box-shadow: 2px 2px 6px white;
+}
+#main{
+    width:100%;
+    height:100vh;
+    background-color:black ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#main div:nth-of-type(2) img{
+    width:300px;
+    height: 370px;
+    position: absolute;
+    top:25%;
+    left:55%;
+    z-index: 1;
+    transition: 0.3s ease;
+}
+#main div:nth-of-type(2) img:hover{
+    transform: translate(-3px,-3px);
+    box-shadow: 5px 5px 6px white;
+}
+.heading{
+    color:white;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+.heading h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.heading p{
+    font-size: 1 rem;
+    padding-top: 30px;
+}
+.btn{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+}
+.btn h3{
+    color: black;
+    background-color: white;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: century;
+    transition: 0.6 ease;
+}
+.btn h3:hover{
+    box-shadow: 2px 2px 6px white;
+    transform: translateY(3px);
+    cursor: pointer;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    font-size: 60px;
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    padding:15vh;
+}
+#pic{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+#pic img{
+    width:250px;
+    height:300px;
+}
+#pic .intro{
+    max-width: 50%;
+    padding-left: 100px
+}
+.intro h2{
+    padding-bottom:20px ;
+}
+#port{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+#port .head{
+    height:20vh;
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
+.gallery img{
+    height: 200px;
+    width: 300px;
+}
+#services{
+    display: flex;
+    flex-direction: column;
+    background: no-repeat url("bgservices.jpg");
+    background-size: 100%;
+}
+.hd{
+    height: 20vh;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    text-transform: uppercase;
+}
+.row{
+    height:80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.block{
+    border:1px solid white;
+    border-radius: 15px;
+    width: 25%;
+    height: 70%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(105, 195, 251, 0.361);
+    transition: 0.4s ease;
+}
+.block:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 8px rgb(169, 229, 255);
+    background-color: rgba(105, 195, 251, 0.631);
+}
+.block h2{
+    padding:30px;
+    text-transform: uppercase;
+}
+#contact{
+    display: flex; 
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.883);
+}
+#contact .hdgs{
+    height: 25vh;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 2rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    align-items: center;
+    margin:25px;
+}
+.input{
+    width:200px;
+    margin-bottom: 30px;
+    padding: 12px;
+}
+#msg{
+    padding: 12px;
+    margin-bottom: 25px;
+}
+#submit{
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+#submit:hover{
+    box-shadow: 3px 3px 5px white;
+}
